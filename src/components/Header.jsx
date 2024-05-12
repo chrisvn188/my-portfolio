@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header
       id="header"
-      className="flex justify-between items-center border-b border-zinc-800 fixed w-full h-[4rem] px-4 top-0 left-0 bg-zinc-900/10 backdrop-blur-sm md:px-8 lg:px-16">
+      className="flex justify-between items-center fixed w-full h-[5rem] px-4 top-0 left-0 bg-color-1/50 backdrop-blur-sm md:px-8 lg:px-16 z-50">
       <a className="flex items-center" href="/">
         <Logo className="h-12 w-12" />
       </a>
@@ -32,7 +32,7 @@ const Header = () => {
           {navLinks.map((item) => (
             <li key={item.id}>
               <a
-                className="uppercase text-sm font-medium text-slate-400 hover:text-slate-50 transition-all"
+                className="capitalize text-base tracking-wide font-semibold text-slate-300 hover:text-slate-50 transition-all"
                 href={item.href}>
                 {item.title}
               </a>
