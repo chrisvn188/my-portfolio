@@ -22,7 +22,7 @@ const Projects = () => {
                   />
                 </a>
               </div>
-              <div className="px-4 py-8 md:px-8 bg-color-1 md:max-w-[50ch] shadow-2xl group-hover:shadow-indigo-500/30">
+              <div className="px-4 py-8 md:px-8 bg-color-1 md:max-w-[60ch] lg:max-w-full shadow-2xl group-hover:shadow-indigo-500/30">
                 <h3 className="capitalize font-sans font-bold text-2xl md:text-3xl lg:text-4xl">
                   {project.title}
                 </h3>

@@ -10,6 +10,13 @@ function App() {
       <Header />
       <Main>
         <Hero />
+        <div>
+          <img
+            src="./src/assets/divider.svg"
+            alt=""
+            className="select-none w-full"
+          />
+        </div>
         <Projects />
       </Main>
       <Footer className="text-center p-4 bg-color-1">
