@@ -1,6 +1,11 @@
 /* eslint-disable react/prop-types */
-const Section = ({ children }) => {
-  return <section className="pt-[5rem] relative">{children}</section>
+const Section = ({ children, className, id }) => {
+  const classes = className
+  return (
+    <section id={id} className={`pt-[5rem] pb-[5rem] relative ${classes}`}>
+      {children}
+    </section>
+  )
 }
 
 export default Section

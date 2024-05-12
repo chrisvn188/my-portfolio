@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         color: {
-          1: '#1F2028',
+          1: '#131125',
+          2: '#262243',
         },
       },
       fontSize: {
@@ -14,7 +15,7 @@ export default {
           { letterSpacing: '-0.01', lineHeight: '1.2' },
         ],
         900: [
-          'clamp(1rem, 1rem + 0.5vw, 1.125rem)',
+          'clamp(1.125rem, 1rem + 0.5vw, 1.25rem)',
           { letterSpacing: '0', lineHeight: '1.6' },
         ],
       },
