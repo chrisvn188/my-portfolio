@@ -24,7 +24,7 @@ const Header = () => {
       id="header"
       className="flex justify-between items-center bg-color-1/50 backdrop-blur-sm z-50 py-8 px-20">
       <a className="flex items-center" href="/">
-        <Logo className="h-12 w-12" />
+        <Logo className="h-10" />
       </a>
 
       <nav className="hidden md:block">
