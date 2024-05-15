@@ -5,6 +5,7 @@ import { navLinks } from '../constants'
 import { Hamburger, XIcon } from './icons'
 import Button from './Button'
 import Logo from './Logo'
+import PageWidth from './utils/PageWidth'
 
 const Header = () => {
   const [isMenuClosed, setIsMenuClosed] = useState(true)
@@ -20,55 +21,56 @@ const Header = () => {
   }
 
   return (
-    <header
-      id="header"
-      className="flex justify-between items-center bg-color-1/50 backdrop-blur-sm z-50 py-8 px-20">
-      <a className="flex items-center" href="/">
-        <Logo className="h-10" />
-      </a>
-
-      <nav className="hidden md:block">
-        <ul className="flex gap-8">
-          {navLinks.map((item) => (
-            <li key={item.id}>
-              <a
-                className="capitalize text-base tracking-wide font-semibold text-slate-300 hover:text-slate-50 transition-all"
-                href={item.href}>
-                {item.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
-      <Button className="md:hidden" isIcon onClick={handleToggleMenu}>
-        {isMenuClosed ? <Hamburger /> : <XIcon />}
-      </Button>
-
-      {!isMenuClosed && (
-        <nav
-          className="absolute top-full right-0"
-          aria-label="Mobile"
-          ref={navRef}>
-          <ul className="flex flex-col gap-4 bg-zinc-800/50 p-8 rounded-bl-3xl border-b border-l border-zinc-700/30 backdrop-blur-md">
-            {navLinks.map((item) => (
-              <li key={item.id}>
-                <a
-                  className="uppercase text-sm font-bold hover:underline"
-                  onClick={handleCLickMobileLinks}
-                  href={item.href}>
-                  {item.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
-
-      <div className="hidden">
-        <button className="toggle-mode">Toggle</button>
-        <button>Let&apos;s talk</button>
-      </div>
+    <header id="header">
+      <PageWidth>
+        <div className="flex justify-between items-center px-4 py-8 [ md:py-8 md:px-16 ]">
+          <a className="flex items-center" href="/">
+            <Logo className="h-10" />
+          </a>
+          <nav className="hidden md:block">
+            <ul className="flex gap-8">
+              {navLinks.map((item) => (
+                <li key={item.id}>
+                  <a
+                    className="capitalize text-base tracking-wide font-semibold text-slate-300 hover:text-slate-50"
+                    href={item.href}>
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <Button
+            className="md:hidden hover:bg-indigo-950 hover:rounded-full"
+            isIcon
+            onClick={handleToggleMenu}>
+            {isMenuClosed ? (
+              <Hamburger className="w-8 h-8" />
+            ) : (
+              <XIcon className="w-8 h-8" />
+            )}
+          </Button>
+          {!isMenuClosed && (
+            <nav
+              className="fixed top-0 right-0 w-full h-full"
+              aria-label="Mobile Nav"
+              ref={navRef}>
+              <ul className="flex flex-col gap-4 bg-zinc-800/50 px-4 py-12 rounded-bl-3xl border-b border-l border-zinc-700/30 backdrop-blur-md">
+                {navLinks.map((item) => (
+                  <li key={item.id}>
+                    <a
+                      className="uppercase text-md text-center font-bold block p-4 active:bg-white active:text-black active:rounded-full"
+                      onClick={handleCLickMobileLinks}
+                      href={item.href}>
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+        </div>
+      </PageWidth>
     </header>
   )
 }

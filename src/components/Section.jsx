@@ -1,10 +1,14 @@
+import PageWidth from './utils/PageWidth'
+
 /* eslint-disable react/prop-types */
 const Section = ({ children, className, id }) => {
-  const classes = className
+  const ownClasses = 'relative'
   return (
-    <section id={id} className={`${classes}`}>
-      {children}
-    </section>
+    <PageWidth>
+      <section id={id} className={`${ownClasses} ${className || ''}`}>
+        {children}
+      </section>
+    </PageWidth>
   )
 }
 

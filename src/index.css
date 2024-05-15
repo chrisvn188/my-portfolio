@@ -7,20 +7,57 @@
     font-family: Sora;
     src: url('./src/assets/Sora.ttf') format('truetype');
   }
+
+  @font-face {
+    font-family: Inter;
+    src: url('./src/assets/Inter.ttf') format('truetype');
+  }
+
   h1,
   h2,
   h3 {
     font-family: Sora, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+
+  p,
+  span {
+    font-family: Inter, Impact, Haettenschweiler, 'Arial Narrow Bold',
+      sans-serif;
+  }
 }
 
-.clip-custom {
-  clip-path: polygon(
-    0 0,
-    calc(100% - 1rem) 0%,
-    100% calc(0% + 1rem),
-    100% 100%,
-    0 100%,
-    0% 50%
-  );
+.move-up {
+  animation: moveUp 4s ease-in infinite;
+}
+
+.move-down {
+  animation: moveDown 4s ease-in 1s infinite;
+}
+
+@keyframes moveUp {
+  0% {
+  }
+  25% {
+    transform: translate3d(0, -10px, 0);
+  }
+  50% {
+    transform: translate3d(10px, -20px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+  }
+  25% {
+    transform: translate3d(0, 20px, 0);
+  }
+  50% {
+    transform: translate3d(-20px, 25px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
 }

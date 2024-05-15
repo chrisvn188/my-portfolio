@@ -11,11 +11,11 @@ export default {
       },
       fontSize: {
         1000: [
-          'clamp(2rem, 2rem + 2vw, 4rem)',
+          'clamp(1.8rem, 1.8rem + 2vw, 4rem)',
           { letterSpacing: '-0.01', lineHeight: '1.2' },
         ],
         900: [
-          'clamp(1.125rem, 1rem + 0.5vw, 1.25rem)',
+          'clamp(1rem, 1rem + 0.5vw, 1.25rem)',
           { letterSpacing: '0', lineHeight: '1.6' },
         ],
       },
