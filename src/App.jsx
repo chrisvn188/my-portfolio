@@ -4,7 +4,7 @@ import Main from './components/Main'
 
 function App() {
   return (
-    <div className="min-h-dvh bg-color-1 text-slate-50 md:bg-indigo-950 lg:bg-green-950">
+    <div className="min-h-dvh bg-color-1 text-slate-50">
       <Header />
       <Main>
         <Hero />

@@ -29,25 +29,25 @@ const Hero = () => {
       </div>
       <TextPill
         className={
-          'lg:top-[15%] lg:left-[10%] lg:text-orange-600 lg:border-orange-600 move-down'
+          'lg:top-[15%] lg:left-[10%] lg:text-orange-600/90 lg:border-orange-600/90 move-down'
         }>
         Team member
       </TextPill>
       <TextPill
         className={
-          'lg:top-[20%] lg:right-[10%] lg:text-yellow-600 lg:border-yellow-600 move-up'
+          'lg:top-[20%] lg:right-[10%] lg:text-yellow-600/90 lg:border-yellow-600/90 move-up'
         }>
         Soccer addict
       </TextPill>
       <TextPill
         className={
-          'lg:bottom-[20%] lg:right-[15%] lg:text-indigo-600 lg:border-indigo-600 move-down'
+          'lg:bottom-[20%] lg:right-[15%] lg:text-indigo-600/90 lg:border-indigo-600/90 move-down'
         }>
         Old music fan
       </TextPill>
       <TextPill
         className={
-          'lg:bottom-[20%] lg:left-[15%] lg:text-pink-600 lg:border-pink-600 move-up'
+          'lg:bottom-[20%] lg:left-[15%] lg:text-pink-600/90 lg:border-pink-600/90 move-up'
         }>
         Hard work
       </TextPill>

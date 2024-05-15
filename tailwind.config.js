@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         color: {
-          1: '#131125',
+          1: '#181818',
           2: '#262243',
         },
       },
