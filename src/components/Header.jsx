@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header
       id="header"
-      className="flex justify-between items-center fixed w-full h-[5rem] px-4 top-0 left-0 bg-color-1/50 backdrop-blur-sm md:px-8 lg:px-16 z-50">
+      className="flex justify-between items-center bg-color-1/50 backdrop-blur-sm z-50 py-8 px-20">
       <a className="flex items-center" href="/">
         <Logo className="h-12 w-12" />
       </a>
