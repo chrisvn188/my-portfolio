@@ -17,7 +17,7 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="text-900 leading-relaxed text-indigo-200 px-4 mx-auto mt-6 max-w-[40ch] | lg:max-w-[52ch] |">
+          <p className="text-900 leading-relaxed text-indigo-200 mx-auto mt-6 max-w-[40ch] | lg:max-w-[52ch] |">
             I love the process of turning abstract ideas into practical,
             real-world applications through the power of programming.
           </p>
@@ -28,27 +28,23 @@ const Hero = () => {
         </div>
       </div>
       <TextPill
-        className={
-          'lg:top-[15%] lg:left-[10%] lg:text-orange-600/90 lg:border-orange-600/90 move-down'
-        }>
+        className={'lg:top-[15%] lg:left-[10%] move-down'}
+        color="orange">
         Team member
       </TextPill>
       <TextPill
-        className={
-          'lg:top-[20%] lg:right-[10%] lg:text-yellow-600/90 lg:border-yellow-600/90 move-up'
-        }>
+        className={'lg:top-[20%] lg:right-[10%] move-up'}
+        color="yellow">
         Soccer addict
       </TextPill>
       <TextPill
-        className={
-          'lg:bottom-[20%] lg:right-[15%] lg:text-indigo-600/90 lg:border-indigo-600/90 move-down'
-        }>
+        className={'lg:bottom-[20%] lg:right-[15%] move-down'}
+        color="indigo">
         Old music fan
       </TextPill>
       <TextPill
-        className={
-          'lg:bottom-[20%] lg:left-[15%] lg:text-pink-600/90 lg:border-pink-600/90 move-up'
-        }>
+        className={'lg:bottom-[20%] lg:left-[15%] move-up'}
+        color="pink">
         Hard work
       </TextPill>
     </Section>
