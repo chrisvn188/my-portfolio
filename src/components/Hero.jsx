@@ -1,12 +1,13 @@
 import Button from './Button'
 import Section from './Section'
+import BlurBackground from './decorations/BlurBackground'
 import TextPill from './decorations/TextPill'
 
 /* eslint-disable react/prop-types */
 const Hero = () => {
   return (
     <Section>
-      <div className="px-4 py-12 md:py-16">
+      <div className="px-4 py-12 md:py-16 relative z-20">
         <div className="text-center">
           <h1 className="font-bold text-1000 text-indigo-50 leading-tight capitalize max-w-[18ch] mx-auto">
             <span className="block bg-gradient-to-r from-indigo-500 to-pink-500 text-transparent bg-clip-text">
@@ -39,7 +40,7 @@ const Hero = () => {
       </TextPill>
       <TextPill
         className={'lg:bottom-[20%] lg:right-[15%] move-down'}
-        color="indigo">
+        color="violet">
         Old music fan
       </TextPill>
       <TextPill
@@ -47,6 +48,8 @@ const Hero = () => {
         color="pink">
         Hard work
       </TextPill>
+      <BlurBackground className="w-[30rem] h-[30rem] bg-gradient-to-r from-indigo-500/30 to-pink-500/30 bottom-0 right-[5%] blur-3xl" />
+      <BlurBackground className="w-[30rem] h-[30rem] bg-gradient-to-tr from-red-500/30 to-violet-500/30 top-0 left-[5%] blur-3xl move-down" />
     </Section>
   )
 }
