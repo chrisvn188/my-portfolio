@@ -7,14 +7,14 @@ import TextPill from './decorations/TextPill'
 const Hero = () => {
   return (
     <Section>
-      <div className="px-4 py-12 md:py-16 relative z-20">
+      <div className="px-4 py-14 md:py-24 lg:py-32 relative z-20">
         <div className="text-center">
-          <h1 className="font-bold text-1000 text-indigo-50 leading-tight capitalize max-w-[18ch] mx-auto">
-            <span className="block bg-gradient-to-r from-indigo-500 to-pink-500 text-transparent bg-clip-text">
+          <h1 className="text-1000 text-indigo-50 leading-tight capitalize max-w-[18ch] mx-auto">
+            <span className="block bg-gradient-to-r from-indigo-500 to-pink-500 text-transparent bg-clip-text font-light text-2xl md:text-4xl pb-2">
               Hi, I&apos;m Chris Bui
             </span>
-            <span className="block">
-              Frontend Engineer from Hanoi, Vietnam.
+            <span className="block font-bold text-balance">
+              Frontend web developer from Vietnam.
             </span>
           </h1>
 
@@ -23,7 +23,7 @@ const Hero = () => {
             real-world applications through the power of programming.
           </p>
 
-          <Button className="mt-14" href="#projects">
+          <Button className="mt-14 md:mt-16 lg:mt-20" href="#projects">
             View my work
           </Button>
         </div>

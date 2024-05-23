@@ -4,7 +4,7 @@ const Button = ({ href, isIcon, onClick, className, children }) => {
   const classes = `${
     isIcon
       ? 'w-10 h-10 grid place-items-center'
-      : 'px-6 py-4 [ md:px-8 md:py-6 ] font-bold bg-indigo-600 text-900 text-slate-50 rounded-full inline-block'
+      : 'px-6 py-4 [ md:px-8 md:py-4 ] font-medium bg-indigo-600 text-900 text-slate-50 rounded-full inline-block'
   }`
 
   const makeButton = () => {

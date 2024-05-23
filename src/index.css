@@ -3,26 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: Sora;
-    src: url('./src/assets/Sora.ttf') format('truetype');
-  }
-
-  @font-face {
-    font-family: Inter;
-    src: url('./src/assets/Inter.ttf') format('truetype');
-  }
-
   h1,
   h2,
   h3 {
-    font-family: Sora, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  p,
-  span {
-    font-family: Inter, Impact, Haettenschweiler, 'Arial Narrow Bold',
-      sans-serif;
+    font-family: 'Sora', sans-serif;
   }
 }
 
@@ -35,16 +19,15 @@
 }
 
 @keyframes moveUp {
-  0% {
+  0%,
+  100% {
+    transform: translate(0);
   }
   25% {
     transform: translate3d(0, -10px, 0);
   }
   50% {
     transform: translate3d(10px, -20px, 0);
-  }
-  100% {
-    transform: translate(0);
   }
 }
 

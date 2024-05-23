@@ -21,11 +21,13 @@ const Header = () => {
   }
 
   return (
-    <header id="header">
-      <PageWidth>
-        <div className="flex justify-between items-center px-4 py-8 [ md:py-8 md:px-16 ]">
+    <header
+      id="header"
+      className="border-b border-zinc-50/10 h-20 flex items-center justify-stretch">
+      <PageWidth className="w-full">
+        <div className="flex justify-between items-center p-4 [ md:px-16 ]">
           <a className="flex items-center" href="/">
-            <Logo className="h-10" />
+            <Logo className="h-6 fill-current text-zinc-50" />
           </a>
           <nav className="hidden md:block">
             <ul className="flex gap-8">
