@@ -29,7 +29,7 @@ function HeroText() {
           real-world applications through the power of programming.
         </p>
         <button
-          className="c-button mt-14 md:mt-16 lg:mt-20 bg-violet-600 text-900 text-slate-50"
+          className="c-button mt-14 md:mt-16 lg:mt-20 bg-violet-600 text-clamp-base text-zinc-50"
           href="#projects">
           View my work
         </button>
