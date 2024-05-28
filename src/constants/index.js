@@ -1,3 +1,6 @@
+import { FaHtml5, FaReact } from 'react-icons/fa'
+import { IoLogoJavascript } from 'react-icons/io5'
+
 export const navLinks = [
   {
     id: 0,
@@ -57,5 +60,29 @@ export const projects = [
     imageUrl: '../src/assets/PORTFOLIO-V1.png',
     githubUrl: '/',
     liveUrl: '/',
+  },
+]
+
+export const techStack = [
+  {
+    id: 0,
+    name: 'HTML & CSS',
+    Icon: FaHtml5,
+    description:
+      'Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences.',
+  },
+  {
+    id: 1,
+    name: 'Javascript',
+    Icon: IoLogoJavascript,
+    description:
+      'Expertise in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality',
+  },
+  {
+    id: 2,
+    name: 'React',
+    Icon: FaReact,
+    description:
+      'Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.',
   },
 ]

@@ -44,3 +44,12 @@
     transform: translate(0);
   }
 }
+
+@layer components {
+  .c-button {
+    @apply px-6 py-4 md:px-8 md:py-4 font-medium rounded-full inline-block;
+  }
+  .c-icon-button {
+    @apply w-10 h-10 grid place-items-center;
+  }
+}

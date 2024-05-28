@@ -3,7 +3,6 @@
 import { useRef, useState } from 'react'
 import { navLinks } from '../constants'
 import { Hamburger, XIcon } from './icons'
-import Button from './Button'
 import Logo from './Logo'
 import PageWidth from './utils/PageWidth'
 
@@ -50,8 +49,8 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-          <Button
-            className="md:hidden hover:bg-indigo-950 hover:rounded-full"
+          <button
+            className="c-icon-button md:hidden hover:bg-indigo-950 hover:rounded-full"
             isIcon
             onClick={handleToggleMenu}>
             {isMenuClosed ? (
@@ -59,7 +58,7 @@ const Header = () => {
             ) : (
               <XIcon className="w-8 h-8" />
             )}
-          </Button>
+          </button>
           {!isMenuClosed && (
             <nav
               className="fixed top-0 right-0 w-full h-full z-50"
