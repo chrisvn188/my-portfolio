@@ -20,6 +20,12 @@ const Header = () => {
     setIsMenuClosed(true)
   }
 
+  const handleClickNavLink = (e) => {
+    e.preventDefault()
+    const section = e.target.dataset.section
+    document.getElementById(section).scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <header
       id="header"
@@ -35,7 +41,9 @@ const Header = () => {
                 <li key={item.id}>
                   <a
                     className="capitalize text-base tracking-wide font-semibold text-slate-300 hover:text-slate-50"
-                    href={item.href}>
+                    href={item.href}
+                    data-section={item.href.substring(1)}
+                    onClick={handleClickNavLink}>
                     {item.title}
                   </a>
                 </li>
