@@ -27,7 +27,7 @@ const Header = () => {
       <PageWidth className="w-full">
         <div className="flex justify-between items-center p-4 [ md:px-16 ]">
           <a className="flex items-center" href="/">
-            <Logo className="h-6 fill-current text-zinc-50" />
+            <Logo className="h-5 fill-current text-zinc-50" />
           </a>
           <nav className="hidden md:block">
             <ul className="flex gap-8">
@@ -54,7 +54,7 @@ const Header = () => {
           </Button>
           {!isMenuClosed && (
             <nav
-              className="fixed top-0 right-0 w-full h-full"
+              className="fixed top-0 right-0 w-full h-full z-50"
               aria-label="Mobile Nav"
               ref={navRef}>
               <ul className="flex flex-col gap-4 bg-zinc-800/50 px-4 py-12 rounded-bl-3xl border-b border-l border-zinc-700/30 backdrop-blur-md">
