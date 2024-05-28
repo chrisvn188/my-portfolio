@@ -1,5 +1,5 @@
 import { techStack } from '../constants'
-import Section from './Section'
+import Section from './utils/Section'
 
 const TechStack = () => {
   return (

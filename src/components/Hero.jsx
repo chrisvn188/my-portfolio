@@ -1,4 +1,4 @@
-import Section from './Section'
+import Section from './utils/Section'
 import BlurBackground from './decorations/BlurBackground'
 import TextPill from './decorations/TextPill'
 

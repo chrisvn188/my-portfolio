@@ -5,6 +5,7 @@ import { navLinks } from '../constants'
 import { useContext } from 'react'
 import { NavigationContext } from '../App'
 import { FaBars } from 'react-icons/fa'
+import SocialLinks from './SocialLinks'
 
 const Header = () => {
   const { handleClickNavLink, openSidebar } = useContext(NavigationContext)
@@ -17,6 +18,9 @@ const Header = () => {
         <div className="flex justify-between items-center p-4 [ md:px-16 ]">
           <Logo className="h-5 fill-current text-zinc-50" />
           <DesktopNav onClickNavLink={handleClickNavLink} />
+          <div className="hidden md:block">
+            <SocialLinks />
+          </div>
           <OpenMobileMenuButton onMenuButtonClick={openSidebar} />
         </div>
       </PageWidth>

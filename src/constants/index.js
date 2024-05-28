@@ -1,4 +1,10 @@
-import { FaHtml5, FaReact } from 'react-icons/fa'
+import {
+  FaHtml5,
+  FaReact,
+  FaGithub,
+  FaCodepen,
+  FaLinkedinIn,
+} from 'react-icons/fa'
 import { IoLogoJavascript } from 'react-icons/io5'
 
 export const navLinks = [
@@ -85,4 +91,10 @@ export const techStack = [
     description:
       'Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.',
   },
+]
+
+export const socialLinks = [
+  { id: 0, name: 'github', href: 'https://github.com', Icon: FaGithub },
+  { id: 0, name: 'linkedin', href: 'https://linkedin.com', Icon: FaLinkedinIn },
+  { id: 0, name: 'codepen', href: 'https://codepen.io', Icon: FaCodepen },
 ]

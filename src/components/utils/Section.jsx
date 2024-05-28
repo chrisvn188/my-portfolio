@@ -1,4 +1,4 @@
-import PageWidth from './utils/PageWidth'
+import PageWidth from './PageWidth'
 
 /* eslint-disable react/prop-types */
 const Section = ({ children, className, id, headingText }) => {
