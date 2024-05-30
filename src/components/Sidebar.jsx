@@ -5,10 +5,13 @@ import { useContext } from 'react'
 import SocialLinks from './SocialLinks'
 
 const Sidebar = ({ navLinks }) => {
-  const { closeSidebar, handleClickNavLink } = useContext(NavigationContext)
+  const { closeSidebar, handleClickNavLink, isSidebarOpen } =
+    useContext(NavigationContext)
+  let positionClass = isSidebarOpen ? 'right-0' : '-right-full'
 
   return (
-    <aside className="fixed top-0 left-0 w-full h-dvh bg-zinc-900 grid place-items-center">
+    <aside
+      className={`fixed top-0 ${positionClass} w-full h-dvh bg-zinc-900 grid place-items-center transition-all`}>
       <div className="w-full flex flex-col items-center gap-16">
         <ul className="flex flex-col gap-4 w-full">
           {navLinks.map((navLink) => (
@@ -26,7 +29,7 @@ const Sidebar = ({ navLinks }) => {
         <SocialLinks />
       </div>
       <button
-        className="absolute top-4 right-4"
+        className="absolute top-6 right-6"
         onClick={closeSidebar}
         aria-label="close mobile nav">
         <IoClose className="text-3xl" />

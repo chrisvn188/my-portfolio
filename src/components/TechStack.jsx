@@ -17,7 +17,7 @@ function StackList() {
     <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {techStack.map(({ id, Icon, name, description }) => (
         <div key={id}>
-          <Icon className="text-7xl text-violet-500" />
+          <Icon className="text-7xl text-indigo-600" />
           <h3 className="pt-4 pb-2 text-xl font-semibold text-zinc-50">
             {name}
           </h3>

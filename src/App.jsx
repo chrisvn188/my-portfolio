@@ -35,7 +35,7 @@ function App() {
           <Hero />
           <TechStack />
         </Main>
-        {isSidebarOpen && <Sidebar navLinks={navLinks} />}
+        <Sidebar navLinks={navLinks} />
       </div>
     </NavigationContext.Provider>
   )

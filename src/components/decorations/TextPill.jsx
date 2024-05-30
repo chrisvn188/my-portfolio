@@ -4,18 +4,18 @@ const TextPill = ({ className, children, color }) => {
   switch (color) {
     case 'orange':
       colorClasses =
-        'lg:text-orange-400 lg:border-orange-400 lg:bg-orange-900/30'
+        'lg:text-orange-400 lg:border-orange-400/30 lg:bg-orange-900/30'
       break
     case 'violet':
       colorClasses =
-        'lg:text-violet-400 lg:border-violet-400 lg:bg-violet-900/30'
+        'lg:text-violet-400 lg:border-violet-400/30 lg:bg-violet-900/30'
       break
     case 'pink':
-      colorClasses = 'lg:text-pink-400 lg:border-pink-400 lg:bg-pink-900/30'
+      colorClasses = 'lg:text-pink-400 lg:border-pink-400/30 lg:bg-pink-900/30'
       break
     case 'yellow':
       colorClasses =
-        'lg:text-yellow-400 lg:border-yellow-400 lg:bg-yellow-900/30'
+        'lg:text-yellow-400 lg:border-yellow-400/30 lg:bg-yellow-900/30'
       break
   }
   let ownClasses =
